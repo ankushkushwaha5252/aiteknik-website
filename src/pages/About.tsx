@@ -17,14 +17,14 @@ export default function About() {
   return (
     <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-24"
         >
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 text-xs font-bold uppercase mb-8 tracking-widest shadow-sm">
-             <Award size={14} />
-             DPIIT Recognized Startup
+            <Award size={14} />
+            DPIIT Recognized Startup
           </div>
           <h1 className="text-5xl md:text-7xl font-display font-bold mb-8 text-slate-900">About <span className="text-gradient">AITekNix</span></h1>
           <p className="text-slate-600 text-xl max-w-3xl mx-auto leading-relaxed font-sans">
@@ -56,19 +56,19 @@ export default function About() {
         <div className="mb-32 bg-white rounded-[60px] border border-slate-200 p-12 lg:p-20 shadow-xl overflow-hidden relative">
           {/* ... existing bio content ... */}
           <div className="absolute top-0 right-0 w-full h-full opacity-5 pointer-events-none">
-             <div className="bg-mesh w-full h-full" />
+            <div className="bg-mesh w-full h-full" />
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 relative z-10 items-center">
             <div className="relative">
               <div className="absolute inset-0 bg-indigo-600 rounded-[40px] rotate-3 opacity-10" />
-              <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600" 
+              <img
+                src="./assets/images/khurseed.png"
                 className="rounded-[40px] relative z-10 w-full shadow-2xl transition-transform hover:-rotate-1 duration-500"
                 alt="Dr. Mohammed Khursheed Akhtar"
               />
               <div className="absolute bottom-6 left-6 right-6 p-6 glass rounded-2xl">
-                 <h4 className="text-slate-900 font-bold text-xl mb-1">Dr. Mohammed Khursheed Akhtar</h4>
-                 <p className="text-indigo-600 text-sm font-bold uppercase tracking-widest">Founder & CEO</p>
+                <h4 className="text-slate-900 font-bold text-xl mb-1">Dr. Mohammed Khursheed Akhtar</h4>
+                <p className="text-indigo-600 text-sm font-bold uppercase tracking-widest">Founder & CEO</p>
               </div>
             </div>
             <div className="space-y-6">
@@ -112,7 +112,7 @@ export default function About() {
               { icon: Award, title: 'Excellence', desc: 'Delivering rigorous, relevant, future-ready AI.' },
               { icon: Globe, title: 'Sustainability', desc: 'Supporting environmental and social goals.' }
             ].map((v, idx) => (
-              <motion.div 
+              <motion.div
                 key={idx}
                 whileHover={{ y: -10 }}
                 className="bg-white p-8 rounded-[40px] border border-slate-200 shadow-sm group"
